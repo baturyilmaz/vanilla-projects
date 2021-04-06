@@ -1,7 +1,8 @@
 # Vanilla Projects
 
-## CSS Projects
+## Responsive CSS Projects
 
+- Documentation Page [[Source](https://github.com/batyil/vanilla-projects/tree/main/css-projects/documentation-page)] [[Page](https://batyil.github.io/vanilla-projects/css-projects/documentation-page)]
 - Tribute Page (Dennis Ritchie) [[Source](https://github.com/batyil/vanilla-projects/tree/main/css-projects/tribute-page)] [[Page](https://batyil.github.io/vanilla-projects/css-projects/tribute-page/tribute-page.html)]
 
 ## JavaScript Projects
