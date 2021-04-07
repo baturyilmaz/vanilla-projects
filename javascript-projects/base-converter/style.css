@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  /* http://www.heropatterns.com/ */
+  background-color: #241240;
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 20.5V18H0v-2h20v-2H0v-2h20v-2H0V8h20V6H0V4h20V2H0V0h22v20h2V0h2v20h2V0h2v20h2V0h2v20h2V0h2v20h2v2H20v-1.5zM0 20h2v20H0V20zm4 0h2v20H4V20zm4 0h2v20H8V20zm4 0h2v20h-2V20zm4 0h2v20h-2V20zm4 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2z' fill='%2317151a' fill-opacity='0.18' fill-rule='evenodd'/%3E%3C/svg%3E");
+  /* - */
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+}
+
+/* CONTAINER */
+
+.container {
+  padding: 7rem;
+  border-radius: 40px;
+  border: 1px solid #241240;
+  width: 95%;
+  max-width: 1000px;
+  background: rgb(25, 2, 32);
+  background: linear-gradient(
+    0deg,
+    rgba(25, 2, 32, 1) 1%,
+    rgba(15, 1, 29, 0.15730042016806722) 100%
+  );
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+/* HEADER */
+
+header.info {
+  width: 95%;
+  max-width: 1000px;
+  padding: 2rem 0;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: lighter;
+  color: #b5179e;
+  font-family: "Zilla Slab Highlight", "Roboto", cursive;
+}
+
+/* FORM */
+
+form {
+  font-size: 2rem;
+  color: #e5e5e5;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.selects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.selects :first-child {
+  margin-right: 1rem;
+}
+
+select {
+  padding: 10px;
+  border: 1px solid #999;
+  font-size: 1.8rem;
+  color: #e5e5e5;
+  background-color: rgb(25, 2, 32);
+  width: 100%;
+}
+
+label {
+  display: block;
+  font-weight: lighter;
+  line-height: 1.6;
+}
+.label-container {
+  flex: 1;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem 0.5rem;
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+
+button {
+  width: 100%;
+  padding: 1rem 0.5rem;
+  margin-top: 1rem;
+  background-color: rgba(25, 2, 32, 0.103);
+  border: 1px solid #999;
+  font-size: 2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #e5e5e5;
+}
+button:hover {
+  background-color: rgb(25, 2, 32);
+}
+
+.result {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: white;
+  color: rgb(25, 2, 32);
+  padding: 1rem 0.5rem;
+  font-size: 2rem;
+  margin-top: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+  overflow-y: auto;
+}
+.result.wrong {
+  background-color: #6a040f;
+  color: #e5e5e5;
+  font-weight: lighter;
+}
+
+@media screen and (max-width: 600px) {
+  .selects {
+    display: block;
+  }
+  .selects :first-child {
+    margin-right: 0;
+  }
+  .selects :last-child {
+    margin-top: 1rem;
+  }
+
+  .container {
+    padding: 4rem 2rem;
+  }
+
+  select {
+    padding: 5px;
+    font-size: 1.6rem;
+  }
+
+  button {
+    font-size: 1.8rem;
+    padding: 0.5rem;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 4rem;
+  }
+}
